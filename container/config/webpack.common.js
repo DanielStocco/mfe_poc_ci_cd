@@ -1,4 +1,8 @@
+const HtmlWPPlugin = require('html-webpack-plugin');
 
+const htmlWPPlugin = new HtmlWPPlugin({
+    template: './public/index.html'
+})
 
 module.exports = {
     module: {
@@ -15,5 +19,7 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+
+    plugins: [ htmlWPPlugin ]
 }
