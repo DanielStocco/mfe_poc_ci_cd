@@ -4,12 +4,12 @@ const { dependencies }= require('../package.json');
 
 const commonConfig = require ('./webpack.common');
 
-const domain = process.env.PRODUCTION_DOMAIN
+const domain = `https://${process.env.PRODUCTION_DOMAIN}`
 
 const moduleFederation = new ModuleFederationPlugin({
     name: 'container',
     remotes: {
-        marketing: `marketing@${domain}/marketing/remoteEntry.js`,
+        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
     },
     shared: dependencies
 })

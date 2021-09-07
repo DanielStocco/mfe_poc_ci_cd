@@ -15,7 +15,10 @@ const moduleFederationPlugin = new ModuleFederation({
 
 const config = {
     mode: 'production',
-    output: { filename: '[name].[contenthash].js' },
+    output: {
+        filename: '[name].[contenthash].js',
+        publicPath: '/marketing/latest/'
+    },
     plugins: [ moduleFederationPlugin ]
 };
 
