@@ -1,102 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18219906-2ca8-4bc8-b0f3-4cf818de341f" name="Changes" comment="nuevos WF">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/dashboard.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mfe-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/config/webpack.common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/config/webpack.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/config/webpack.prod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/src/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/src/components/Signin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/src/components/Signup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/auth/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/config/webpack.common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/config/webpack.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/config/webpack.prod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/src/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/src/components/AuthApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/src/components/DashboardApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/src/components/MarketingApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/src/components/Progress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/container/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/dashboard/config/webpack.common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/dashboard/config/webpack.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/dashboard/config/webpack.prod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/dashboard/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/dashboard/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/dashboard/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/dashboard/src/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/dashboard/src/components/Dashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/dashboard/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/config/webpack.common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/config/webpack.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/config/webpack.prod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/src/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/src/components/Landing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/src/components/Pricing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/marketing/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/config/webpack.common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/config/webpack.dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/config/webpack.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/components/Signin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/components/Signup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/config/webpack.common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/config/webpack.dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/config/webpack.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/src/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/src/components/AuthApp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/src/components/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/src/components/MarketingApp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/src/components/Progress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/config/webpack.common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/config/webpack.dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/config/webpack.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/config/webpack.common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/config/webpack.dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/config/webpack.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/src/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/src/components/Landing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/src/components/Pricing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/marketing/src/index.js" beforeDir="false" />
+    <list default="true" id="18219906-2ca8-4bc8-b0f3-4cf818de341f" name="Changes" comment="CAMBIOS">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +72,7 @@
       <workItem from="1629923634329" duration="1423000" />
       <workItem from="1630697585244" duration="18227000" />
       <workItem from="1631028733677" duration="27127000" />
-      <workItem from="1631139238851" duration="12726000" />
+      <workItem from="1631139238851" duration="19297000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1630697904624</created>
@@ -392,7 +298,63 @@
       <option name="project" value="LOCAL" />
       <updated>1631190760596</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="muchos fix">
+      <created>1631192241331</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1631192241331</updated>
+    </task>
+    <task id="LOCAL-00034" summary="cambios en WF">
+      <created>1631192503963</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1631192503963</updated>
+    </task>
+    <task id="LOCAL-00035" summary="up version">
+      <created>1631192632879</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1631192632879</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fix en container wf">
+      <created>1631193664471</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1631193664471</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix en container wf">
+      <created>1631193707291</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1631193707291</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fix en container wf">
+      <created>1631193925486</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1631193925486</updated>
+    </task>
+    <task id="LOCAL-00039" summary="fix en container wf">
+      <created>1631193977882</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1631193977882</updated>
+    </task>
+    <task id="LOCAL-00040" summary="CAMBIOS">
+      <created>1631195763010</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1631195763010</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +391,12 @@
     <MESSAGE value="fix bardos" />
     <MESSAGE value="added new action" />
     <MESSAGE value="nuevos WF" />
-    <option name="LAST_COMMIT_MESSAGE" value="nuevos WF" />
+    <MESSAGE value="muchos fix" />
+    <MESSAGE value="cambios en WF" />
+    <MESSAGE value="up version" />
+    <MESSAGE value="fix en container wf" />
+    <MESSAGE value="CAMBIOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="CAMBIOS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
