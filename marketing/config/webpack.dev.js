@@ -1,36 +1,33 @@
 const { merge } = require('webpack-merge');
-const HtmlWPPlugin = require('html-webpack-plugin');
-const ModuleFederation = require('webpack/lib/container/ModuleFederationPlugin');
-const { dependencies }= require('../package.json');
-
-
-const commonConfig = require ('./webpack.common')
-
-
-const moduleFederationPlugin = new ModuleFederation({
-    name: 'marketing',
-    filename: 'remoteEntry.js',
-    exposes: {
-        './MarketingApp': './src/bootstrap'
-    },
-    shared: dependencies
-})
-
-const htmlWPPlugin = new HtmlWPPlugin({
-    template: './public/index.html'
-})
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+const commonConfig = require('./webpack.common');
+const packageJson = require('../package.json');
 
 const devConfig = {
-    mode: 'development',
-    devServer: {
-        port: 8082,
-        historyApiFallback: {
-            index: 'index.html'
-        }
+  mode: 'development',
+  output: {
+    publicPath: 'http://localhost:8082/',
+  },
+  devServer: {
+    port: 8082,
+    historyApiFallback: {
+      index: 'index.html',
     },
-    plugins: [ moduleFederationPlugin, htmlWPPlugin ]
+  },
+  plugins: [
+    new ModuleFederationPlugin({
+      name: 'marketing',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './MarketingApp': './src/bootstrap',
+      },
+      shared: packageJson.dependencies,
+    }),
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+    }),
+  ],
 };
-
 
 module.exports = merge(commonConfig, devConfig);
