@@ -5,7 +5,7 @@ const packageJson = require('../package.json');
 
 const domain = process.env.PRODUCTION_DOMAIN;
 
-console.log('-----------------------------------------------------------------');
+console.log('-------------DDDAALE----------------------------------------------------');
 console.log(domain);
 console.log('-----------------------------------------------------------------');
 
