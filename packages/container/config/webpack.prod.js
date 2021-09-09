@@ -5,6 +5,10 @@ const packageJson = require('../package.json');
 
 const domain = process.env.PRODUCTION_DOMAIN;
 
+console.log('-----------------------------------------------------------------');
+console.log(domain);
+console.log('-----------------------------------------------------------------');
+
 const prodConfig = {
   mode: 'production',
   output: {
