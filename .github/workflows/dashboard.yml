@@ -1,11 +1,11 @@
-name: deploy-dashboard
-
+name: deploy-dashboardApp
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - 'packages/dashboard/**'
+      - './github/workflows/**'
 
 defaults:
   run:
@@ -14,19 +14,29 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
+      ## CREAR BUNDLE
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
+        env:
+          PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
+      ## CREAR BUNDLE --FIN
 
-      - uses: chrislennon/action-aws-cli@v1.1
-      - run: aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/dashboard/latest
+      ## SUBO BUNDLE A S3
+      - uses: ItsKarma/aws-cli@v1.70.0
+        with:
+          args: s3 sync dashboard/dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/dashboard/latest
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      ## SUBO BUNDLE A S3 --FIN
 
-      - run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "/dashboard/latest/remoteEntry.js"
+      ## CREA INVALIDATION PARA QUE CF SIRVA SIEMPRE LA ÚLTIMA VERSION DE NUESTRA APP.
+      - uses: ItsKarma/aws-cli@v1.70.0
+        with:
+          args: cloudfront create-invalidation --distribution-id ${{secrets.AWS_DISTRIBUTION_ID}} --paths "/dashboard/latest/index.html"
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+          AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+    ## CREA INVALIDATION PARA QUE CF SIRVA SIEMPRE LA ÚLTIMA VERSION DE NUESTRA APP. --FIN
